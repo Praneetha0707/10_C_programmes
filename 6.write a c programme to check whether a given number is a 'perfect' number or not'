@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+int n,i=2,sum=1,rem;
+printf("enter the number:");
+scanf("%d",&n);
+while(i<n)
+{
+rem=n%i;
+  if(rem==0)
+  sum=sum+i;
+  i++;
+  }
+  if(sum==n)
+  printf("\nn=%d is  a perfect number",n);
+  else
+  printf("\nn=%d is not a perfect number",n);
+}
